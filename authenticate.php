@@ -4,7 +4,7 @@ session_start();
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'root';
 $DATABASE_PASS = '';
-$DATABASE_NAME = 'DBCOMERCIO';
+$DATABASE_NAME = 'bbdd_mytiendainfoalba';
 
 // Probamos a conectar a la base de datos, en caso de error devolvemos mensaje de error
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
@@ -19,7 +19,7 @@ if ( !isset($_POST['username'], $_POST['password']) ) {
 }
 
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
+if ($stmt = $con->prepare('SELECT id, password FROM clients WHERE username = ?')) {
 	// Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
 	$stmt->bind_param('s', $_POST['username']);
 	$stmt->execute();
