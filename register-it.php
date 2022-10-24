@@ -29,7 +29,7 @@ VALUES ('$username','$password','$email','$name','$surname','$age','$DNI','$city
 if(!$temp){
     echo "error";
 }else{
-    if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
+    if ($stmt = $conn->prepare('SELECT id, password FROM clients WHERE username = ?')) {
         // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
         $stmt->bind_param('s', $_POST['username']);
         $stmt->execute();
