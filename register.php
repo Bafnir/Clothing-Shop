@@ -15,6 +15,31 @@
 				</label>
 				<input type="text" name="username" placeholder="Usuario" id="username" required>
 
+				<label class="aligned-label" for="name">
+                <i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="name" placeholder="Nombre" id="name" required>
+
+				<label class="aligned-label" for="surname">
+                <i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="surname" placeholder="Apellido" id="surname" required>
+
+				<label class="aligned-label" for="DNI">
+                <i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="DNI" placeholder="DNI" id="DNI" required>
+
+				<label class="aligned-label" for="age">
+                <i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="age" placeholder="Edad" id="age" required>
+
+				<label class="aligned-label" for="city">
+                <i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="city" placeholder="Ciudad" id="city" required>
+
 				<label class="aligned-label"  for="password">
                     <i class="fas fa-lock"></i></label>
 				<input type="password" name="password" placeholder="Contraseña" id="password" required>
