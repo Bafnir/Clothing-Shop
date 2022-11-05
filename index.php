@@ -5,6 +5,7 @@
 		<title>Tienda Comercio</title>
 		<link href="style.php" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
 	</head>
 	<body>
 		<div class="login">

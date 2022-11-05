@@ -27,29 +27,32 @@ $stmt->close();
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Profile Page</title>
+		<title>Perfil y Datos</title>
 		<link href="style.php" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
 	</head>
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<a href="home.php"><h1>Home</h1></a>
+				<h1><a href="home.php" style="color:black;"><h1>Home</h1></a></h1>
 				<a style="color:black;" href="profile.php"><i class="fas fa-user-circle"></i>Perfil</a>
 				<a style="color:black;" href="logout.php"><i class="fas fa-sign-out-alt"></i>Desconectar</a>
 			</div>
 		</nav>
+		<div>
+		</div>
 		<div class="content">
-			<h2>Profile Page</h2>
+			<h2>Página de perfil</h2>
 			<div>
-				<p>Your account details are below:</p>
+				<p>Los datos de tu cuenta:</p>
 				<table>
 					<tr>
-						<td>Username:</td>
+						<td>Usuario:</td>
 						<td><?=$_SESSION['name']?></td>
 					</tr>
 					<tr>
-						<td>Password:</td>
+						<td>Contraseña(Encriptada):</td>
 						<td><?=$password?></td>
 					</tr>
 					<tr>

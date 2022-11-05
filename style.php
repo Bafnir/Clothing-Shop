@@ -8,7 +8,7 @@
 }
 body {
     background-color: #f7ca99;
-    background-image: url(background-image-index.jpeg);
+    background-image: url(images/background-image-index.jpeg);
     background-size: cover;
     background-repeat: no-repeat; 
     height: 100%;
@@ -69,7 +69,7 @@ html{
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: #c21a04;
+    background-color: #009879;
     color: #ffffff;
 }
 .login form input[type="password"], .login form input[type="text"]{
@@ -86,7 +86,7 @@ html{
     border-radius: 10px;
     margin-top: 20px;
     margin: 10px;
-    background-color: #c21a04;
+    background-color: #009879;
     border: 0;
     cursor: pointer;
     font-weight: bold;
@@ -97,14 +97,17 @@ html{
     border-collapse: collapse;
     margin: 25px 25px;
     font-size: 0.9em;
+    border-radius: 1em;
     font-family: sans-serif;
     min-width: 400px;
+    width: 75%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .user-table thead tr {
     background-color: #009879;
     color: #ffffff;
+    border-radius: 1em;
     text-align: left;
 }
 
@@ -141,7 +144,7 @@ html{
     padding: 15px;
     border-radius: 10px;
     margin: 10px;
-    background-color: #c21a04;
+    background-color: #009879;
     border: 0;
     cursor: pointer;
     font-weight: bold;
@@ -153,7 +156,7 @@ html{
     transition: background-color 0.2s;
 }
 .navtop {
-	background-color: #c21a04;
+	background-color: #009879;
 	height: 60px;
 	width: 100%;
 	border: 0;
@@ -195,6 +198,7 @@ body.loggedin {
 .content {
 	width: 1000px;
 	margin: 0 auto;
+    margin-top: 20px;
 }
 .content h2 {
 	margin: 0;
@@ -220,4 +224,17 @@ body.loggedin {
 .content > div p {
 	padding: 5px;
 	margin: 0 0 10px 0;
+}
+
+.user-table form input[type="submit"]{
+  width: 93%;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #B695C0;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
 }
