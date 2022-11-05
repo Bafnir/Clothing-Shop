@@ -12,13 +12,19 @@ body {
     background-size: cover;
     background-repeat: no-repeat; 
     height: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 html{
     height: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 .loggedin {
     background-color: white;
     background-image: url(background-image-indx.jpeg);
+    padding: 0px;
+    margin: 0px;
 }
 
 .center-home{
@@ -89,7 +95,7 @@ html{
 }
 .user-table {
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 25px 25px;
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;
@@ -127,7 +133,8 @@ html{
 .title-home{
     background-color: white;
     border-radius: 10px;
-    margin-top: 10px;
+    padding: 5px;
+	margin: 0 0 10px 0;
 }
 .registerLogin form input[type="submit"] {
     width: 93%;
@@ -146,10 +153,11 @@ html{
     transition: background-color 0.2s;
 }
 .navtop {
-	background-color: #f7ca99;
+	background-color: #c21a04;
 	height: 60px;
 	width: 100%;
 	border: 0;
+    padding: 0;
 }
 .navtop div {
 	display: flex;
