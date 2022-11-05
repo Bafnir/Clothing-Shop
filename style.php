@@ -11,6 +11,10 @@ body {
     background-image: url(background-image-index.jpeg);
     background-size: cover;
     background-repeat: no-repeat; 
+    height: 100%;
+}
+html{
+    height: 100%;
 }
 .loggedin {
     background-color: white;

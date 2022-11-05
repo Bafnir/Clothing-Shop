@@ -29,18 +29,16 @@ VALUES ('$username','$password','$email','$name','$surname','$age','$DNI','$city
 if(!$temp){
     echo "error";
 }else{
+    //now we log into the account we just created.
     if ($stmt = $conn->prepare('SELECT id, password FROM clients WHERE username = ?')) {
-        // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
         $stmt->bind_param('s', $_POST['username']);
         $stmt->execute();
-        // Store the result so we can check if the account exists in the database.
         $stmt->store_result();
-        
+    
         if ($stmt->num_rows > 0) {
             $stmt->bind_result($id, $password);
             $stmt->fetch();
             // Account exists, now we verify the password.
-            // Note: remember to use password_hash in your registration file to store the hashed passwords.
             if (password_verify($_POST['password'], $password)) {
                 // Verification success! User has logged-in!
                 // Create sessions, so we know the user is logged in, they basically act like cookies but remember the data on the server.
@@ -51,15 +49,14 @@ if(!$temp){
                 header('Location: home.php');
             } else {
                 // Incorrect password
-                echo 'Incorrect username and/or password!';
+                echo 'Se ha producido un error al registrar el usuario';
             }
         } else {
             // Incorrect username
-            echo 'Incorrect username and/or password!';
+            echo 'Se ha producido un error al registrar el usuario';
         }
     
     
         $stmt->close();
-    }
 }
 }

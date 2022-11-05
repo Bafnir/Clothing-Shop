@@ -1,3 +1,10 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tienda Comercio</title>
+		<link href="style.php" rel="stylesheet" type="text/css">
+    </head>
+</html>
 <?php
 session_start();
 // Información de conexión con DB 
@@ -30,7 +37,6 @@ if ($stmt = $con->prepare('SELECT id, password FROM clients WHERE username = ?')
         $stmt->bind_result($id, $password);
         $stmt->fetch();
         // Account exists, now we verify the password.
-        // Note: remember to use password_hash in your registration file to store the hashed passwords.
         if (password_verify($_POST['password'], $password)) {
             // Verification success! User has logged-in!
             // Create sessions, so we know the user is logged in, they basically act like cookies but remember the data on the server.
@@ -41,14 +47,18 @@ if ($stmt = $con->prepare('SELECT id, password FROM clients WHERE username = ?')
             header('Location: home.php');
         } else {
             // Incorrect password
-            echo 'Incorrect username and/or password!';
+            echo '<script type="text/javascript">';
+            echo 'alert("Usuario o contraseña incorrecto");';
+            echo 'window.location.href= "index.php";';
+            echo '</script>';
         }
     } else {
         // Incorrect username
-        echo 'Incorrect username and/or password!';
+        echo '<script type="text/javascript">';
+        echo 'alert("Usuario o contraseña incorrecto");';
+        echo 'window.location.href= "index.php";';
+        echo '</script>';
     }
-
-
 	$stmt->close();
 }
 ?>
