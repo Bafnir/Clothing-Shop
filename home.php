@@ -14,8 +14,8 @@ if (!isset($_SESSION['loggedin'])) {
 <head>
 	<meta charset="utf-8">
 	<title>Tienda de Ropa</title>
-	<link href="style-home.php" rel="stylesheet" type="text/css">
-	<link href="style.php" rel="stylesheet" type="text/css">
+	<link href="../styles/style-home.php" rel="stylesheet" type="text/css">
+	<link href="../styles/style.php" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	<link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
 </head>
@@ -41,6 +41,7 @@ if (!isset($_SESSION['loggedin'])) {
 					<tr>
 						<td>Nombre</td>
 						<td>Precio</td>
+						<td>Color</td>
 						<td></td>
 						<td></td>
 					</tr>
@@ -52,16 +53,15 @@ if (!isset($_SESSION['loggedin'])) {
 							echo"<tr>";
 							echo"<td>". $pro['name'] ."</td>";
 							echo"<td>". $pro['price'] ."€</td>";
+							echo"<td>". $pro['colour'] ."</td>";
 							echo"<td><img src='".$pro['image_src']."' alt='Clothing item' width='200' height='200'></td>";
-							echo"<td><form method='GET' action=''><input type='submit' value='Comprar'></form></td>";
+							echo"<td><form method='post' action='showProducto.php/?id=".$pro['id']."'><a href='showProducto.php/?id=".$pro['id']."'><input id='btn-see' type='submit' value='Comprar'></a></form></td>";
 							echo"</tr>";
 						}
 					?>
 				</tbody>
 			</table>
 		</div>
-
-
 </body>
 
 </html>

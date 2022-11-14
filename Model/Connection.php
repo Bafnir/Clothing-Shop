@@ -25,6 +25,15 @@ class Conexion{
         return $result;
     }
 
+    public function getProductById($id){
+        $queryString = 'SELECT * FROM product WHERE id = '.$id;
+        $result = 0;
+        if ($query = $this->con->query($queryString)) {
+            $result= $query->fetch_assoc();
+        }
+        return $result;      
+    }
+
     public function getClients(){
         $query = $this->con->query('SELECT * FROM clients');
         $result = [];

@@ -8,7 +8,7 @@
 }
 body {
     background-color: #f7ca99;
-    background-image: url(images/background-image-index.jpeg);
+    background-image: url(../images/background-image-index.jpeg);
     background-size: cover;
     background-repeat: no-repeat; 
     height: 100%;
@@ -33,6 +33,10 @@ html{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.producto {
+    background-color: blue;
 }
 
 .login{
@@ -237,4 +241,10 @@ body.loggedin {
   font-weight: bold;
   color: #ffffff;
   transition: background-color 0.2s;
+}
+
+.Producto{
+    background-color: #c2ffd8;
+    border-radius: 10px;
+    padding: 3%;
 }
