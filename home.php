@@ -25,6 +25,7 @@ if (!isset($_SESSION['loggedin'])) {
 		<div>
 			<h1 style="color:black;">Tienda de ROPA</h1>
 			<a style="color:black;" href="profile.php"><i class="fas fa-user-circle"></i>Perfil</a>
+			<a style="color:black;" href="Cart.php"><i class="fas fa-shopping-cart"></i>Carrito</a>
 			<a style="color:black;" href="logout.php"><i class="fas fa-sign-out-alt"></i>Desconectar</a>
 		</div>
 	</nav>
@@ -55,7 +56,9 @@ if (!isset($_SESSION['loggedin'])) {
 							echo"<td>". $pro['price'] ."€</td>";
 							echo"<td>". $pro['colour'] ."</td>";
 							echo"<td><img src='".$pro['image_src']."' alt='Clothing item' width='200' height='200'></td>";
-							echo"<td><form method='post' action='showProducto.php/?id=".$pro['id']."'><a href='showProducto.php/?id=".$pro['id']."'><input id='btn-see' type='submit' value='Comprar'></a></form></td>";
+							echo"<td><form method='post' action='showProducto.php/?id=".$pro['id']."'><a href='showProducto.php/?id=".$pro['id']."'><input id='btn-see' type='submit' value='Comprar'></a></form>
+							<form method='post' action='addToCart.php/?id=".$pro['id']."'><a href='addToCart.php/?id=".$pro['id']."'><input id='btn-see' type='submit' value='Añadir al carrito'></a></form>
+							</td>";
 							echo"</tr>";
 						}
 					?>

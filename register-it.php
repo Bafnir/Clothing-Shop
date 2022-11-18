@@ -45,6 +45,8 @@ if (isset($_POST['username'], $_POST['password'], $_POST['email'], $_POST['name'
                     $_SESSION['loggedin'] = TRUE;
                     $_SESSION['name'] = $_POST['username'];
                     $_SESSION['id'] = $id;
+                    //Inicializamos el carrito al logear
+                    $_SESSION['shoppingCart'] = array();
                     header('Location: home.php');
                 } else {
                     // Incorrect password

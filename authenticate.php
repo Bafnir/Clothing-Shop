@@ -44,6 +44,8 @@ if ($stmt = $con->prepare('SELECT id, password FROM clients WHERE username = ?')
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
+            //Inicializamos el carrito al logear
+            $_SESSION['shoppingCart'] = array();
             header('Location: home.php');
         } else {
             // Incorrect password

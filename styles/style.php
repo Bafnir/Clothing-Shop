@@ -22,7 +22,7 @@ html{
 }
 .loggedin {
     background-color: white;
-    background-image: url(background-image-indx.jpeg);
+    background-image: url();
     padding: 0px;
     margin: 0px;
 }
@@ -235,7 +235,7 @@ body.loggedin {
   padding: 15px;
   border-radius: 10px;
   margin: 10px;
-  background-color: #B695C0;
+  background-color: #009879;
   border: 0;
   cursor: pointer;
   font-weight: bold;
@@ -247,4 +247,16 @@ body.loggedin {
     background-color: #c2ffd8;
     border-radius: 10px;
     padding: 3%;
+}
+.boton-solo{
+    width: 93%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #009879;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
 }
