@@ -14,6 +14,9 @@ body {
     height: 100%;
     padding: 0px;
     margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 html{
     height: 100%;
@@ -259,4 +262,14 @@ body.loggedin {
     font-weight: bold;
     color: #ffffff;
     transition: background-color 0.2s;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    background-color: black;
+    width:100%;
+    color: white;
+    text-align: center;
+    margin-top: auto;
 }

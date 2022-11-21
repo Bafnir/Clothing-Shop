@@ -56,7 +56,7 @@ if (!isset($_SESSION['loggedin'])) {
 							echo"<td>". $pro['price'] ."€</td>";
 							echo"<td>". $pro['colour'] ."</td>";
 							echo"<td><img src='".$pro['image_src']."' alt='Clothing item' width='200' height='200'></td>";
-							echo"<td><form method='post' action='showProducto.php/?id=".$pro['id']."'><a href='showProducto.php/?id=".$pro['id']."'><input id='btn-see' type='submit' value='Comprar'></a></form>
+							echo"<td><form method='post' action='showProducto.php/?id=".$pro['id']."'><a href='showProducto.php/?id=".$pro['id']."'><input id='btn-see' type='submit' value='Detalles'></a></form>
 							<form method='post' action='addToCart.php/?id=".$pro['id']."'><a href='addToCart.php/?id=".$pro['id']."'><input id='btn-see' type='submit' value='Añadir al carrito'></a></form>
 							</td>";
 							echo"</tr>";

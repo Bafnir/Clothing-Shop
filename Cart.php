@@ -65,7 +65,7 @@ if (!isset($_SESSION['loggedin'])) {
 
 				</tbody>
 			</table>
-            <form method='post' action='deleteFromCart.php/?id=".$producto['id']."'><a href='deleteFromCart/?id=".$producto['id']."'><input class='boton-solo' id='btn-see' type='submit' value='Completar Compra'></a></form>
+            <form method='post' action='completeOrder.php'><a href='completeOrder.php'><input class='boton-solo' id='btn-see' type='submit' value='Completar Compra'></a></form>
 		</div>
 	</div>
 </body>
