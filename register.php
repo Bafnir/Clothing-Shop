@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Registro</title>
-		<link href="style-register.php" rel="stylesheet" type="text/css">
+		<link href="./styles/style-register.php" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 		<link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
 	</head>

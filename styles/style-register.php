@@ -1,11 +1,10 @@
 <?php header("Content-type: text/css");?>
 body {
     background-color: #f7ca99;
-    background-image: url(background-image-index.jpeg);
+    background-image: url(../images/background-image-index.jpeg);
     background-size: cover;
     background-repeat: no-repeat; 
 }
-
 
 .register{
     width: 400px;
@@ -20,10 +19,6 @@ body {
     padding-top: 30px;
     text-align: center;
 
-}
-
-.prueba{
-    display: flex;
 }
 .register form label{
     display: flex;
@@ -64,5 +59,10 @@ body {
     cursor: pointer;
     font-weight: bold;
     color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+.register form input[type="submit"]:hover{
+  background-color: #04702e;
     transition: background-color 0.2s;
 }

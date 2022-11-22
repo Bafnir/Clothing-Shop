@@ -6,6 +6,9 @@ if (!isset($_SESSION['loggedin'])) {
     header('Location: index.php');
     exit;
 }
+if(empty($_SESSION['shoppingCart'])){
+    header('Location: Cart.php');
+}
 
 ?>
 <!DOCTYPE html>

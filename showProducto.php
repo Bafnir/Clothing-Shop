@@ -41,9 +41,6 @@ $idProducto = $params['id'];
 			<a style="color:black;" href="../logout.php"><i class="fas fa-sign-out-alt"></i>Desconectar</a>
 		</div>
 	</nav>
-	<div class="content">
-	</div>
-
 	<div>
 		<div class="center-home">
 			<h1>Información de producto</h1>

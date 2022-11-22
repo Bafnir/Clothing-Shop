@@ -159,7 +159,7 @@ html{
     transition: background-color 0.2s;
 }
 .login form input[type="submit"]:hover, .registerLogin form input[type="submit"]:hover{
-  background-color: #eb7a34;
+  background-color: #04702e;
     transition: background-color 0.2s;
 }
 .navtop {
@@ -244,6 +244,29 @@ body.loggedin {
   font-weight: bold;
   color: #ffffff;
   transition: background-color 0.2s;
+}
+
+.center-home form input[type="submit"]{
+  width: 93%;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #009879;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.center-home form input[type="submit"]:hover{
+    background-color: #04702e;
+    transition: background-color 0.2s;
+}
+
+.user-table form input[type="submit"]:hover{
+    background-color: #04702e;
+    transition: background-color 0.2s;
 }
 
 .Producto{
