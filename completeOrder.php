@@ -6,7 +6,7 @@ if (!isset($_SESSION['loggedin'])) {
     header('Location: index.php');
     exit;
 }
-if(empty($_SESSION['shoppingCart'])){
+if (empty($_SESSION['shoppingCart'])) {
     header('Location: Cart.php');
 }
 
@@ -28,7 +28,7 @@ if(empty($_SESSION['shoppingCart'])){
     <nav class="navtop">
         <div>
             <h1><a href="../home.php" style="color:black;">
-                    <h1>Home</h1>
+                    <h1>Inicio</h1>
                 </a></h1>
             <a style="color:black;" href="../profile.php"><i class="fas fa-user-circle"></i>Perfil</a>
             <a style="color:black;" href="../Cart.php"><i class="fas fa-shopping-cart"></i>Carrito</a>
@@ -69,8 +69,8 @@ if(empty($_SESSION['shoppingCart'])){
                                 <div class="col-50">
                                     <h3>Pago</h3>
                                     <label for="fname">Solo aceptamos pago con paypal</label>
-                                    
-                            <input type="submit" value="Completar compra" class="btn">
+
+                                    <input type="submit" value="Completar compra" class="btn">
                         </form>
                     </div>
                 </div>
@@ -84,15 +84,15 @@ if(empty($_SESSION['shoppingCart'])){
                         </h4>
                         <?php
                         $totalPrice = 0;
-						require('Controller/C_seeProducts.php');
-						foreach($_SESSION['shoppingCart'] as $pro=>$amount){
-                            $producto = $con -> getProductById($pro);
-							echo"<p><a href='showProducto.php/?id=".$producto['id']."'>". $producto['name'] ."</a> <span class='price'>". $producto['price'] ." x ".$amount."</span></p>";
-                            $totalPrice = $totalPrice + ($producto['price']*$amount);
-						}
-                        echo"<hr>";
-                        echo"<p>Total <span class='price' style='color:black'><b>" .$totalPrice."</b></span></p>";
-					    ?>
+                        require('Controller/C_seeProducts.php');
+                        foreach ($_SESSION['shoppingCart'] as $pro => $amount) {
+                            $producto = $con->getProductById($pro);
+                            echo "<p><a href='showProducto.php/?id=" . $producto['id'] . "'>" . $producto['name'] . "</a> <span class='price'>" . $producto['price'] . " x " . $amount . "</span></p>";
+                            $totalPrice = $totalPrice + ($producto['price'] * $amount);
+                        }
+                        echo "<hr>";
+                        echo "<p>Total <span class='price' style='color:black'><b>" . $totalPrice . "</b></span></p>";
+                        ?>
                     </div>
                 </div>
             </div>

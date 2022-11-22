@@ -184,7 +184,7 @@ html{
 	font-size: 24px;
 	padding: 0;
 	margin: 0;
-	color: #eaebed;
+	color: black;
 	font-weight: normal;
 }
 .navtop div a {
