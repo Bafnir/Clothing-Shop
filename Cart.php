@@ -60,6 +60,7 @@ if (!isset($_SESSION['loggedin'])) {
                         echo"<tr>";
                         echo"<td>Precio Total:</td>";
                         echo"<td>". $totalPrice ."</td>";
+						$_SESSION['totalPrice'] = $totalPrice;
                         echo"</tr>";
 					?>
 

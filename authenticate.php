@@ -46,6 +46,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM clients WHERE username = ?')
             $_SESSION['id'] = $id;
             //Inicializamos el carrito al logear
             $_SESSION['shoppingCart'] = array();
+            ini_set('session.gc_maxlifetime', 3600);
             header('Location: home.php');
         } else {
             // Incorrect password

@@ -1,3 +1,13 @@
+<?php
+//GATHERING PRODUCTS TO SHOW THEM 
+session_start();
+// If the user is not logged in redirect to the login page...
+if (isset($_SESSION['loggedin'])) {
+	header('Location: home.php');
+	exit;
+}
+?>
+
 <!DOCTYPE html>
 <html>
 

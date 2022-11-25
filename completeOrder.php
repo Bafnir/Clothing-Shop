@@ -39,29 +39,30 @@ if (empty($_SESSION['shoppingCart'])) {
         <div class="center-home">
             <h1>Completar compra</h1>
             <p>Complete los datos referentes al envío:</p>
-
             <div class="row">
                 <div class="col-75">
                     <div class="container">
-                        <form action="/action_page.php">
+                        <form action="payment.php" method="post">
                             <div class="row">
                                 <div class="col-50">
                                     <h3>Dirección de envio</h3>
                                     <label for="fname"><i class="fa fa-use"></i>Nombre completo</label>
-                                    <input type="text" id="fname" name="firstname" placeholder="Alejandro Pérez">
+                                    <input type="text" id="fname" name="fname" placeholder="Nombre y Apellidos" required>
+
                                     <label for="adr"><i class="fa fa-address-card-o"></i>Dirección</label>
-                                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                    <input type="text" id="adr" name="adr" placeholder="Avenida de España 33 4B" required>
+
                                     <label for="city"><i class="fa fa-institution"></i>Ciudad</label>
-                                    <input type="text" id="city" name="city" placeholder="New York">
+                                    <input type="text" id="city" name="city" placeholder="Albacete" required>
 
                                     <div class="row">
                                         <div class="col-50">
-                                            <label for="state">Código postal</label>
-                                            <input type="text" id="zip name=" zip" placeholder="02006">
+                                            <label for="zip">Código postal</label>
+                                            <input type="text" id="zip" name="zip" placeholder="02006" required>
                                         </div>
                                         <div class="col-50">
-                                            <label for="zip">DNI</label>
-                                            <input type="text" id="zip" name="zip" placeholder="12345678X">
+                                            <label for="dni">DNI</label>
+                                            <input type="text" id="dni" name="dni" placeholder="12345678X"  required>
                                         </div>
                                     </div>
                                 </div>
@@ -69,8 +70,8 @@ if (empty($_SESSION['shoppingCart'])) {
                                 <div class="col-50">
                                     <h3>Pago</h3>
                                     <label for="fname">Solo aceptamos pago con paypal</label>
-
-                                    <input type="submit" value="Completar compra" class="btn">
+                                    <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png">
+                                    <input type="submit" value="Ir al pago" class="btn">
                         </form>
                     </div>
                 </div>

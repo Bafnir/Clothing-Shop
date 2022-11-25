@@ -47,6 +47,7 @@ if (isset($_POST['username'], $_POST['password'], $_POST['email'], $_POST['name'
                     $_SESSION['id'] = $id;
                     //Inicializamos el carrito al logear
                     $_SESSION['shoppingCart'] = array();
+                    ini_set('session.gc_maxlifetime', 3600);
                     header('Location: home.php');
                 } else {
                     // Incorrect password

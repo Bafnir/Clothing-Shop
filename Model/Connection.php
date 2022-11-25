@@ -25,6 +25,40 @@ class Conexion{
         return $result;
     }
 
+    public function getOrders($id){
+        $query = $this->con->query('SELECT * FROM onlineOrder WHERE idClient = '.$id);
+        $result = [];
+        $i=0;
+        while($fila = $query->fetch_assoc()){
+            $result[$i] = $fila;
+            $i++;
+        }
+
+        return $result;
+    }
+
+    public function getLineasPedido($id){
+        $query = $this->con->query('SELECT * FROM orderLine WHERE orderId = '.$id);
+        $result = [];
+        $i=0;
+        while($fila = $query->fetch_assoc()){
+            $result[$i] = $fila;
+            $i++;
+        }
+
+        return $result;
+    }
+
+
+    public function getPedidoById($id){
+        $queryString = 'SELECT * FROM onlineOrder WHERE orderNum = '.$id;
+        $result = 0;
+        if ($query = $this->con->query($queryString)) {
+            $result= $query->fetch_assoc();
+        }
+        return $result;      
+    }
+
     public function getProductById($id){
         $queryString = 'SELECT * FROM product WHERE id = '.$id;
         $result = 0;
