@@ -31,12 +31,15 @@ html{
 }
 
 .center-home{
-    margin: 0 auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+
 
 .producto {
     background-color: blue;
@@ -272,8 +275,21 @@ body.loggedin {
 .Producto{
     background-color: #c2ffd8;
     border-radius: 10px;
+    display: inline;
     padding: 3%;
+    width: 50%;
 }
+
+.Product{
+    background-color: #c2ffd8;
+    border-radius: 10px;
+    padding: 3%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
 .boton-solo{
     width: 93%;
     padding: 15px;
@@ -295,4 +311,13 @@ footer{
     color: white;
     text-align: center;
     margin-top: auto;
+}
+
+.image{
+    flex-basis: 40%;
+}
+
+.text {
+    font-size: 20px;
+    padding-left: 20px;
 }

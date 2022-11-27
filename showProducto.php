@@ -28,7 +28,8 @@ $idProducto = $params['id'];
 	<title>Tienda de Ropa</title>
 	<link href="../styles/style-home.php" rel="stylesheet" type="text/css">
 	<link href="../styles/style.php" rel="stylesheet" type="text/css">
-	<link rel="/stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link href="../styles/productstyle.php" rel="stylesheet" type="text/css">
+	<link rel="../stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	<link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
 </head>
 
@@ -44,20 +45,27 @@ $idProducto = $params['id'];
 	<div>
 		<div class="center-home">
 			<h1>Información de producto</h1>
-            <div class="Producto">
-            <p><?php
+            <div class="Product">
+
+            <?php
             require('Controller/C_seeProducts.php');
             $producto = $con -> getProductById($idProducto);
-            echo $producto['name'];
+			$src = "../".$producto['image_src'];
+			echo "<div class='image'>";
+            echo "<img src=".$src." alt='Clothing item' width='500' height='500'>";
+			echo "</div>";
+			echo "<div class='text'>";
+            echo "<h2>".$producto['name']."</h2>";
             echo "<br>";
+			echo "<p>Color: </p>";
             echo $producto['colour'];
             echo "<br>";
+			echo "<p>Descripción: </p>";
             echo $producto['description'];
             echo "<br>";
-            $src = "../".$producto['image_src'];
-            echo "<img src=".$src." alt='Clothing item' width='200' height='200'>";
             echo"<form method='post' action='../addToCart.php/?id=".$producto['id']."'><a href='../addToCart.php/?id=".$producto['id']."'><input class='boton-solo' id='btn-see' type='submit' value='Añadir al carrito'></a></form>";
-            ?></p>
+            echo "</div>";
+			?>
             
             </div>
 		</div>

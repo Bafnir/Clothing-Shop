@@ -63,7 +63,8 @@ if (isset($_POST['fname'], $_POST['adr'], $_POST['city'], $_POST['city'], $_POST
                         require('Controller/C_seeProducts.php');
                         foreach ($_SESSION['shoppingCart'] as $pro => $amount) {
                             $producto = $con->getProductById($pro);
-                            echo "<p><a href='showProducto.php/?id=" . $producto['id'] . "'>" . $producto['name'] . "</a> <span class='price'>" . $producto['price'] . " x " . $amount . "</span></p>";
+                            $space = "   ";
+                            echo "<p><a href='showProducto.php/?id=" . $producto['id'] . "'>" . $producto['name'] . " </a><span class='price'>".$space."" . $producto['price'] . " x " . $amount . "</span></p>";
                             $totalPrice = $totalPrice + ($producto['price'] * $amount);
                         }
                         echo "<hr>";

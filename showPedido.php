@@ -29,7 +29,7 @@ $idPedido = $params['id'];
 	<link href="../styles/style-home.php" rel="stylesheet" type="text/css">
 	<link href="../styles/style.php" rel="stylesheet" type="text/css">
 	<link rel="/stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-	<link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+	<link rel="icon" type="image/x-icon" href="../images/favicon.jpg">
 </head>
 
 <body class="loggedin">
@@ -62,8 +62,8 @@ $idPedido = $params['id'];
 				<thead>
 					<tr>
 						<td>Nombre</td>
-						<td>Precio</td>
 						<td>Color</td>
+						<td>Precio</td>
 						<td></td>
 						<td></td>
 					</tr>
@@ -77,8 +77,8 @@ $idPedido = $params['id'];
 
                 echo"<tr>";
 							echo"<td>". $producto['name'] ."</td>";
-							echo"<td>". $producto['colour'] ."€</td>";
-							echo"<td>". $producto['price'] ."</td>";
+							echo"<td>". $producto['colour'] ."</td>";
+							echo"<td>". $producto['price'] ."€</td>";
 							echo"<td><img src='../".$producto['image_src']."' alt='Clothing item' width='200' height='200'></td>";
                             $totalPrice = $totalPrice + $producto['price'];
                             echo "<td>Uds: ".$lp['Amount']."</td>";
