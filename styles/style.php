@@ -8,21 +8,41 @@
 }
 body {
     background-color: #f7ca99;
-    background-image: url(background-image-index.jpeg);
+    background-image: url(../images/background-image-index.jpeg);
     background-size: cover;
     background-repeat: no-repeat; 
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+html{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 .loggedin {
     background-color: white;
-    background-image: url(background-image-indx.jpeg);
+    background-image: url();
+    padding: 0px;
+    margin: 0px;
 }
 
 .center-home{
-    margin: 0 auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+
+.producto {
+    background-color: blue;
 }
 
 .login{
@@ -59,7 +79,7 @@ body {
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: #c21a04;
+    background-color: #009879;
     color: #ffffff;
 }
 .login form input[type="password"], .login form input[type="text"]{
@@ -76,7 +96,7 @@ body {
     border-radius: 10px;
     margin-top: 20px;
     margin: 10px;
-    background-color: #c21a04;
+    background-color: #009879;
     border: 0;
     cursor: pointer;
     font-weight: bold;
@@ -85,16 +105,19 @@ body {
 }
 .user-table {
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 25px 25px;
     font-size: 0.9em;
+    border-radius: 1em;
     font-family: sans-serif;
     min-width: 400px;
+    width: 75%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .user-table thead tr {
     background-color: #009879;
     color: #ffffff;
+    border-radius: 1em;
     text-align: left;
 }
 
@@ -123,14 +146,15 @@ body {
 .title-home{
     background-color: white;
     border-radius: 10px;
-    margin-top: 10px;
+    padding: 5px;
+	margin: 0 0 10px 0;
 }
 .registerLogin form input[type="submit"] {
     width: 93%;
     padding: 15px;
     border-radius: 10px;
     margin: 10px;
-    background-color: #c21a04;
+    background-color: #009879;
     border: 0;
     cursor: pointer;
     font-weight: bold;
@@ -138,14 +162,15 @@ body {
     transition: background-color 0.2s;
 }
 .login form input[type="submit"]:hover, .registerLogin form input[type="submit"]:hover{
-  background-color: #eb7a34;
+  background-color: #04702e;
     transition: background-color 0.2s;
 }
 .navtop {
-	background-color: #f7ca99;
+	background-color: #009879;
 	height: 60px;
 	width: 100%;
 	border: 0;
+    padding: 0;
 }
 .navtop div {
 	display: flex;
@@ -162,7 +187,7 @@ body {
 	font-size: 24px;
 	padding: 0;
 	margin: 0;
-	color: #eaebed;
+	color: black;
 	font-weight: normal;
 }
 .navtop div a {
@@ -183,6 +208,7 @@ body.loggedin {
 .content {
 	width: 1000px;
 	margin: 0 auto;
+    margin-top: 20px;
 }
 .content h2 {
 	margin: 0;
@@ -208,4 +234,90 @@ body.loggedin {
 .content > div p {
 	padding: 5px;
 	margin: 0 0 10px 0;
+}
+
+.user-table form input[type="submit"]{
+  width: 93%;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #009879;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.center-home form input[type="submit"]{
+  width: 93%;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #009879;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.center-home form input[type="submit"]:hover{
+    background-color: #04702e;
+    transition: background-color 0.2s;
+}
+
+.user-table form input[type="submit"]:hover{
+    background-color: #04702e;
+    transition: background-color 0.2s;
+}
+
+.Producto{
+    background-color: #c2ffd8;
+    border-radius: 10px;
+    display: inline;
+    padding: 3%;
+    width: 50%;
+}
+
+.Product{
+    background-color: #c2ffd8;
+    border-radius: 10px;
+    padding: 3%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.boton-solo{
+    width: 93%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #009879;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    background-color: black;
+    width:100%;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+.image{
+    flex-basis: 40%;
+}
+
+.text {
+    font-size: 20px;
+    padding-left: 20px;
 }

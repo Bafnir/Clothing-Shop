@@ -1,11 +1,10 @@
 <?php header("Content-type: text/css");?>
 body {
     background-color: #f7ca99;
-    background-image: url(background-image-index.jpeg);
+    background-image: url(../images/background-image-index.jpeg);
     background-size: cover;
     background-repeat: no-repeat; 
 }
-
 
 .register{
     width: 400px;
@@ -21,17 +20,13 @@ body {
     text-align: center;
 
 }
-
-.prueba{
-    display: flex;
-}
 .register form label{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: #c21a04;
+    background-color: #009879;
     color: #ffffff;
 }
 
@@ -59,10 +54,15 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
     margin: 20px;
-    background-color: #c21a04;
+    background-color: #009879;
     border: 0;
     cursor: pointer;
     font-weight: bold;
     color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+.register form input[type="submit"]:hover{
+  background-color: #04702e;
     transition: background-color 0.2s;
 }
