@@ -29,20 +29,21 @@ $idProducto = $params['id'];
 	<link href="../styles/style-home.php" rel="stylesheet" type="text/css">
 	<link href="../styles/style.php" rel="stylesheet" type="text/css">
 	<link href="../styles/productstyle.php" rel="stylesheet" type="text/css">
-	<link rel="../stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
 </head>
 
 <body class="loggedin">
-	<nav class="navtop">
-		<div>
-            <h1><a href="../home.php" style="color:black;"><h1>Inicio</h1></a></h1>
-			<a style="color:black;" href="../profile.php"><i class="fas fa-user-circle"></i>Perfil</a>
-			<a style="color:black;" href="../Cart.php"><i class="fas fa-shopping-cart"></i>Carrito</a>
-			<a style="color:black;" href="../logout.php"><i class="fas fa-sign-out-alt"></i>Desconectar</a>
-		</div>
-	</nav>
+<nav class="navtop">
+			<div>
+			<img src="/images/ClothingLogo.png">
+				<h1><a href="../home.php" style="color:black;"><h1>Inicio</h1></a></h1>
+				<a style="color:black;" href="../profile.php"><i class="fas fa-user-circle"></i>Perfil</a>
+				<a style="color:black;" href="../Cart.php"><i class="fas fa-shopping-cart"></i>Carrito</a>
+				<a style="color:black;" href="../logout.php"><i class="fas fa-sign-out-alt"></i>Desconectar</a>
+			</div>
+		</nav>
 	<div>
 		<div class="center-home">
 			<h1>Información de producto</h1>
