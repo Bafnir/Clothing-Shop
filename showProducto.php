@@ -45,7 +45,7 @@ $idProducto = $params['id'];
 	<div>
 		<div class="center-home">
 			<h1>Información de producto</h1>
-            <div class="Product">
+            <div class="Product" style="background-color: #b8c8e9">
 
             <?php
             require('Controller/C_seeProducts.php');
@@ -63,7 +63,7 @@ $idProducto = $params['id'];
 			echo "<p>Descripción: </p>";
             echo $producto['description'];
             echo "<br>";
-            echo"<form method='post' action='../addToCart.php/?id=".$producto['id']."'><a href='../addToCart.php/?id=".$producto['id']."'><input class='boton-solo' id='btn-see' type='submit' value='Añadir al carrito'></a></form>";
+            echo"<form method='post' action='../addToCart.php/?id=".$producto['id']."'><a href='../addToCart.php/?id=".$producto['id']."'><input class='boton-solo' id='btn-see-add' type='submit' value='Añadir al carrito'></a></form>";
             echo "</div>";
 			?>
             

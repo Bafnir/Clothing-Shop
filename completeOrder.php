@@ -27,6 +27,7 @@ if (empty($_SESSION['shoppingCart'])) {
 <body class="loggedin">
     <nav class="navtop">
         <div>
+        <img src="/images/ClothingLogo.png">
             <h1><a href="../home.php" style="color:black;">
                     <h1>Inicio</h1>
                 </a></h1>

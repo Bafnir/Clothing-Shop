@@ -23,6 +23,7 @@ if (!isset($_SESSION['loggedin'])) {
 <body class="loggedin">
 	<nav class="navtop">
 		<div>
+			<img src="/images/ClothingLogo.png">
             <h1><a href="../home.php" style="color:black;"><h1>Inicio</h1></a></h1>
 			<a style="color:black;" href="../profile.php"><i class="fas fa-user-circle"></i>Perfil</a>
             <a style="color:black;" href="../Cart.php"><i class="fas fa-shopping-cart"></i>Carrito</a>
