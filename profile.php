@@ -45,7 +45,7 @@ $stmt->close();
 		</nav>
 		<div>
 		</div>
-		<div class="content">
+		<div class="content" style="margin-bottom:41px">
 			<h2>Página de perfil</h2>
 			<div>
 				<p>Los datos de tu cuenta:</p>

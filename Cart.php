@@ -31,7 +31,7 @@ if (!isset($_SESSION['loggedin'])) {
 			<a style="color:black;" href="../logout.php"><i class="fas fa-sign-out-alt"></i>Desconectar</a>
 		</div>
 	</nav>
-	<div class="content">
+	<div class="content" style="margin-bottom:152px">
     <div class="center-home">
 			<h1>Productos en el carrito</h1>
 			<table class="user-table">
