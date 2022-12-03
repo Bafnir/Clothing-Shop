@@ -34,12 +34,14 @@ if (isset($_POST['fname'], $_POST['adr'], $_POST['city'], $_POST['city'], $_POST
     <link href="../styles/style.php" rel="stylesheet" type="text/css">
     <link href="../styles/checkout-form.php" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
 </head>
 
 <body class="loggedin">
     <nav class="navtop">
         <div>
+        <img src="/images/ClothingLogo.png">
             <h1><a href="../home.php" style="color:black;">
                     <h1>Inicio</h1>
                 </a></h1>
@@ -95,5 +97,19 @@ if (isset($_POST['fname'], $_POST['adr'], $_POST['city'], $_POST['city'], $_POST
         </div>
     </div>
 </body>
+<footer style="position:inherit; max-width:99.9%; background-color: #15264c">
+        <div class="footer-content">
+            <h3>Clothing Shop ALBA</h3>
+            <p>This is a prototype for an university project, here will be the project that me and my team will be developing during this quarter.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+			<p style="max-width:600px">Alejandro Pérez Martínez - Ioan Gabriel Turcas - Judit Rodrigo Carrasco - Aida Córdoba Moreno</p>
 
+        </div>
+    </footer>
 </html>
