@@ -66,7 +66,6 @@ html{
     font-size: 24px;
     padding: 20px 0 20px 0;
     border-bottom: 1px solid #dee0e4;
-    
 }
 .login form{
     display: flex;
@@ -306,7 +305,6 @@ body.loggedin {
     color: #ffffff;
     transition: background-color 0.2s;
 }
-
 #btn-see-add{
     width: 93%;
     margin-:10px;
@@ -336,8 +334,6 @@ body.loggedin {
     transition: background-color 0.2s;
     
 }
-
-
 .image{
     flex-basis: 40%;
 }

@@ -80,8 +80,6 @@ if (!isset($_SESSION['loggedin'])) {
 				</tbody>
 			</table>
 		</div>
-
-		
 </body>
 
 <footer style="position:inherit; max-width:99.9%; background-color: #15264c">
