@@ -26,7 +26,7 @@ body {
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: #009879;
+    background-color: #14264c;
     color: #ffffff;
 }
 
@@ -54,7 +54,7 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
     margin: 20px;
-    background-color: #009879;
+    background-color: #14264c;
     border: 0;
     cursor: pointer;
     font-weight: bold;

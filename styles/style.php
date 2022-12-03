@@ -37,6 +37,7 @@ html{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family:Cambria, Times, "Times New Roman", serif;
 }
 
 
@@ -79,7 +80,7 @@ html{
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: #009879;
+    background-color: #14264c;
     color: #ffffff;
 }
 .login form input[type="password"], .login form input[type="text"]{
@@ -96,7 +97,7 @@ html{
     border-radius: 10px;
     margin-top: 20px;
     margin: 10px;
-    background-color: #009879;
+    background-color: #14264c;
     border: 0;
     cursor: pointer;
     font-weight: bold;
@@ -112,10 +113,11 @@ html{
     min-width: 400px;
     width: 75%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff
 }
 
 .user-table thead tr {
-    background-color: #009879;
+    background-color: #14264c;
     color: #ffffff;
     border-radius: 1em;
     text-align: left;
@@ -131,16 +133,16 @@ html{
 }
 
 .user-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+    background-color: #ffffff;
 }
 
 .user-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid #14264c;
 }
 
 .user-table tbody tr.active-row {
     font-weight: bold;
-    color: #009879;
+    color: #14264c;
 }
 
 .title-home{
@@ -154,7 +156,7 @@ html{
     padding: 15px;
     border-radius: 10px;
     margin: 10px;
-    background-color: #009879;
+    background-color: #14264c;
     border: 0;
     cursor: pointer;
     font-weight: bold;
@@ -166,7 +168,7 @@ html{
     transition: background-color 0.2s;
 }
 .navtop {
-	background-color: #009879;
+	background-color: #ffffff;
 	height: 60px;
 	width: 100%;
 	border: 0;
@@ -241,7 +243,7 @@ body.loggedin {
   padding: 15px;
   border-radius: 10px;
   margin: 10px;
-  background-color: #009879;
+  background-color: #14264c;
   border: 0;
   cursor: pointer;
   font-weight: bold;
@@ -254,7 +256,7 @@ body.loggedin {
   padding: 15px;
   border-radius: 10px;
   margin: 10px;
-  background-color: #009879;
+  background-color: #14264c;
   border: 0;
   cursor: pointer;
   font-weight: bold;
@@ -281,7 +283,7 @@ body.loggedin {
 }
 
 .Product{
-    background-color: #c2ffd8;
+    background-color: #14264c;
     border-radius: 10px;
     padding: 3%;
     width: 50%;
@@ -293,26 +295,45 @@ body.loggedin {
 .boton-solo{
     width: 93%;
     padding: 15px;
+    border-color:white;
     border-radius: 10px;
     margin: 10px;
-    background-color: #009879;
+    background-color: #14264c;
     border: 0;
     cursor: pointer;
     font-weight: bold;
     color: #ffffff;
     transition: background-color 0.2s;
 }
-
-footer{
-    position:absolute;
-    bottom:0;
-    background-color: black;
-    width:100%;
-    color: white;
-    text-align: center;
-    margin-top: auto;
+#btn-see-add{
+    width: 93%;
+    margin-:10px;
+    padding: 15px;
+    padding-left:15px
+    border-radius: 10px;
+    margin: 10px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    background-color:white;
+    transition: background-color 0.2s;
+    
 }
 
+#btn-see-add[type="submit"]:hover{
+    width: 93%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    background-color:green;
+    transition: background-color 0.2s;
+    
+}
 .image{
     flex-basis: 40%;
 }
@@ -320,4 +341,214 @@ footer{
 .text {
     font-size: 20px;
     padding-left: 20px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+
+.chat-list {
+    padding: 0;
+    font-size: .8rem;
+}
+
+.chat-list li {
+    margin-bottom: 10px;
+    overflow: auto;
+    color: #ffffff;
+}
+
+.chat-list .chat-img {
+    float: left;
+    width: 48px;
+}
+
+.chat-list .chat-img img {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.chat-list .chat-message {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background: #5a99ee;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.chat-list .chat-message:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 0;
+    height: 0;
+}
+
+.chat-list .chat-message h5 {
+    margin: 0 0 5px 0;
+    font-weight: 600;
+    line-height: 100%;
+    font-size: .9rem;
+}
+
+.chat-list .chat-message p {
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-list .chat-body {
+    margin-left: 20px;
+    float: left;
+    width: 70%;
+}
+
+.chat-list .in .chat-message:before {
+    left: -12px;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #5a99ee;
+}
+
+.chat-list .out .chat-img {
+    float: right;
+}
+
+.chat-list .out .chat-body {
+    float: right;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.chat-list .out .chat-message {
+    background: #fc6d4c;
+}
+
+.chat-list .out .chat-message:before {
+    right: -12px;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #fc6d4c;
+}
+
+.card .card-header:first-child {
+    -webkit-border-radius: 0.3rem 0.3rem 0 0;
+    -moz-border-radius: 0.3rem 0.3rem 0 0;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+.card .card-header {
+    background: #17202b;
+    border: 0;
+    font-size: 1rem;
+    padding: .65rem 1rem;
+    position: relative;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.content{
+    margin-top:40px;    
 }
