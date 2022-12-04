@@ -101,6 +101,8 @@ if (empty($_SESSION['shoppingCart'])) {
             </div>
         </div>
     </div>
+    </div>
+</div>
 </body>
 <footer style="position:inherit; max-width:99.9%; background-color: #15264c">
         <div class="footer-content">

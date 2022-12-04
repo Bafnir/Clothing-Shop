@@ -265,17 +265,17 @@ body.loggedin {
 }
 
 .center-home form input[type="submit"]:hover{
-    background-color: #04702e;
+    background-color: #41b6fa;
     transition: background-color 0.2s;
 }
 
 .user-table form input[type="submit"]:hover{
-    background-color: #04702e;
+    background-color: #41b6fa;
     transition: background-color 0.2s;
 }
 
 .Producto{
-    background-color: #c2ffd8;
+    background-color: #b8c8e9;
     border-radius: 10px;
     display: inline;
     padding: 3%;
